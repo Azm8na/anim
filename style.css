@@ -1,0 +1,69 @@
+.t{
+    width: 100px;
+    height: 100px;
+    background-color: #d11f1f;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+
+}
+@keyframes anime{
+    from{background-color: #d11f1f;
+    width: 100px;
+    height: 100px;
+    transform: rotate(0deg);
+}
+    to{background-color: rgb(0, 128, 255);
+    width: 50px;
+    height: 50px;
+    transform: rotate(50deg
+    );
+}
+}
+.a{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: A;
+    animation-duration: 5s;
+    position: relative;
+    animation-iteration-count: 2;
+}
+@keyframes A{
+    0%{background-color: rgb(63, 63, 174); left: 0px; top: 0px;}
+    25%{background-color: rgb(184, 103, 255); left: 300px; top: 0px;}
+    50%{background-color: rgb(124, 239, 95); left: 300px; top: 300px;}
+    75%{background-color: rgb(203, 47, 231); left: 0px; top: 300px;}
+    100%{background-color: rgb(255, 4, 0); left: 0px; top: 0px;}
+}
+.b{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    top: 0px;
+    margin-bottom: 5px;
+    animation-name: B;
+    animation-duration: 5s;
+}
+.a1{
+    animation-timing-function: linear;
+}
+.a2{
+    animation-timing-function: ease;
+}
+.a3{
+    animation-timing-function: ease-in;
+}
+.a4{
+    animation-timing-function: ease-in-out;
+}
+.a5{
+    animation-timing-function: ease-out;
+}
+@keyframes B{
+    from{left: 0px; top: 0px;}
+    to{left: 400px;}
+}
